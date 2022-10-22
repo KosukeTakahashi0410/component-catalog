@@ -38,7 +38,19 @@ MEMO: https://zenn.dev/minguu42/articles/20211226-nextjs-storybook
 ## [WIP] scripts
 
 ```bash
+
+# アプリを起動
 yarn dev
+
+# lint
 yarn lint
+
+# lint fix
 yarn list:fix
+
+# storybook
+yarn storybook
+
+# storybook build
+yarn build-storybook
 ```
