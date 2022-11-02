@@ -43,6 +43,7 @@
     "eslint-plugin-storybook": "^0.6.6",
     "prettier": "2.7.1",
     "sass": "^1.55.0",
-    "typescript": "*"
+    "typescript": "*",
+    "typescript-plugin-css-modules": "^3.4.0"
   }
 }
