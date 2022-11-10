@@ -54,3 +54,5 @@ yarn storybook
 # storybook build
 yarn build-storybook
 ```
+
+自動で Actions が走ります
