@@ -12,6 +12,8 @@ jobs:
     strategy:
       matrix:
         node-version: [16.x]
+    permissions:
+      contents: write
 
     steps:
       - name: checkout
@@ -28,4 +30,4 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./docs
+          folder: ./docs
