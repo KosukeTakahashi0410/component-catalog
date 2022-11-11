@@ -9,7 +9,7 @@
     "lint": "eslint 'src/**/*{.js,.jsx,.ts,.tsx}'",
     "lint:fix": "yarn lint --fix",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook -o ./docs"
   },
   "dependencies": {
     "next": "12.3.1",
