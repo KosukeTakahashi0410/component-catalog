@@ -49,5 +49,8 @@
     "style-loader": "^3.3.1",
     "typescript": "*",
     "typescript-plugin-css-modules": "^3.4.0"
+  },
+  "volta": {
+    "node": "16.14.2"
   }
 }
