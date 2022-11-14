@@ -1,0 +1,28 @@
+.accordion {
+  width: 400px;
+  border: solid 1px gray;
+
+  > .title {
+      position: relative;
+      height: 30px;
+      border: solid 1px gray;
+    }
+  
+    .toggle-button {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      text-align: left;
+    }
+  
+    .toggle-button:focus {
+      outline: 2px solid blue;
+    }
+  
+    .content {
+      min-height: 100px;
+      border: solid 1px gray;
+    }
+}
