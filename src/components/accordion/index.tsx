@@ -35,7 +35,7 @@ export const Accordion: React.FC<Props> = ({ contents }) => {
   return (
     <ul className={styles.accordion}>
       {contents.map(({ id, label, text }) => (
-        <li key={`${id}`}>
+        <li key={`${id}`} className={styles.wrapper}>
           <h2 className={styles.title}>
             <button
               type="button"
