@@ -1,26 +1,34 @@
 module.exports = {
   env: {
     browser: true,
-    es2021: true
+    es2021: true,
   },
-  extends: ["plugin:react/recommended", "standard-with-typescript", "plugin:react-hooks/recommended", "prettier", "plugin:storybook/recommended"],
+  extends: [
+    "plugin:react/recommended",
+    "standard-with-typescript",
+    "plugin:react-hooks/recommended",
+    "prettier",
+    "plugin:storybook/recommended",
+  ],
   overrides: [],
   parserOptions: {
     ecmaVersion: "latest",
     sourceType: "module",
-    project: ["./tsconfig.json"]
+    project: ["./tsconfig.json"],
   },
   plugins: ["react"],
   rules: {
     // MEMO: eslint-plugin-reactと競合するのでOFF
     "react/jsx-uses-react": "off",
     "react/react-in-jsx-scope": "off",
+    // MEMO: https://cpoint-lab.co.jp/article/202107/20531/
+    "react/prop-types": "off",
     // MEMO: https://github.com/react-hook-form/react-hook-form/discussions/8020
-    "@typescript-eslint/no-misused-promises": "off"
+    "@typescript-eslint/no-misused-promises": "off",
   },
   settings: {
     react: {
-      version: "detect"
-    }
-  }
+      version: "detect",
+    },
+  },
 };
