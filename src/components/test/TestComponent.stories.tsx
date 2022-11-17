@@ -3,6 +3,7 @@ import React from 'react';
 
 import { TestComponent } from './TestComponent';
 
+// eslint-disable-next-line @typescript-eslint/consistent-type-assertions
 export default {
   component: TestComponent,
 } as ComponentMeta<typeof TestComponent>;

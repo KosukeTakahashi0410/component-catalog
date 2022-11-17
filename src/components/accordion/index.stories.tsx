@@ -3,6 +3,7 @@ import React from 'react';
 
 import { Accordion } from './index';
 
+// eslint-disable-next-line @typescript-eslint/consistent-type-assertions
 export default {
   component: Accordion,
 } as ComponentMeta<typeof Accordion>;
