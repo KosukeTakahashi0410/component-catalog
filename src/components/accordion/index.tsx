@@ -36,6 +36,7 @@ export const Accordion: React.FC<Props> = ({ contents }) => {
     <ul className={styles.accordion}>
       {contents.map(({ id, label, text }) => (
         <li key={`${id}`} className={styles.wrapper}>
+          {/* FIXME: h2でいいのかを考える。常にh1が先にくる前提なので。 */}
           <h2 className={styles.title}>
             <button
               type="button"
