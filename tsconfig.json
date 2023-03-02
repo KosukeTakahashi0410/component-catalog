@@ -16,7 +16,7 @@
     "incremental": true,
     "baseUrl": ".",
     "paths": {
-      "@styles/*": ["./src/styles/*"]
+      "~/*": ["src/*"]
     },
     "plugins": [{"name": "typescript-plugin-css-modules"}]
   },
