@@ -1,11 +1,9 @@
 .accordion {
   width: 400px;
-  border: solid 1px gray;
 
   >.wrapper  > .title {
       position: relative;
       height: 30px;
-      border: solid 1px gray;
     }
   
   >.wrapper > .title > .toggle-button {
@@ -17,9 +15,9 @@
     text-align: left;
   }
   
-  > .wrapper  >.title > .toggle-button:focus {
-      outline: 2px solid blue;
-    }
+  // > .wrapper  >.title > .toggle-button:focus {
+  //     outline: 2px solid blue;
+  //   }
   
   > .content {
     min-height: 100px;
