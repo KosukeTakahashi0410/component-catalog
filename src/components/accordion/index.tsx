@@ -1,5 +1,6 @@
 import { useState } from "react";
 import styles from "./index.module.scss";
+import classNames from "classnames";
 
 interface Props {
   contents: Array<{ id: number; label: string; text: string }>;
@@ -47,11 +48,11 @@ export const Accordion: React.FC<Props> = ({ contents }) => {
               {label}
             </button>
           </h2>
-          {isOpen(id) && (
-            <div id={`panel-${id}`} className={styles.content}>
-              <p className={styles.text}>{text}</p>
-            </div>
-          )}
+          <div id={`panel-${id}`} className={classNames(styles.content, {
+            [styles.Close]: !isOpen(id)
+          })}>
+            <p className={styles.text}>{text}</p>
+          </div>
         </li>
       ))}
     </ul>
