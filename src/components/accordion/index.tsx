@@ -42,14 +42,14 @@ export const Accordion: React.FC<Props> = ({ contents }) => {
               aria-controls={`panel-${id}`}
               aria-expanded={isOpen(id)}
               onClick={() => toggleAccordion(id)}
-              className={styles["toggle-button"]}
+              className={styles.button}
             >
               {label}
             </button>
           </h2>
           {isOpen(id) && (
             <div id={`panel-${id}`} className={styles.content}>
-              <p>{text}</p>
+              <p className={styles.text}>{text}</p>
             </div>
           )}
         </li>
