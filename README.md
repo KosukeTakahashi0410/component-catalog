@@ -1,13 +1,12 @@
-# コンポーネントのカタログ
+# Component catalog
 
-自作したコンポーネントのカタログ  
-カタログは Github pages で配信されています  
-[URL](https://kosuketakahashi0410.github.io/component-catalog/)
+component のカタログです  
+Github pages で配信されています。  
+[Component catalog](https://kosuketakahashi0410.github.io/component-catalog/)
 
-## [WIP] scripts
+## scripts
 
 ```bash
-
 # アプリを起動
 yarn dev
 
@@ -24,4 +23,7 @@ yarn storybook
 yarn build-storybook
 ```
 
-自動で Actions が走ります
+## デプロイについて
+
+Push のたびに Actions を実行したくないため、手動での管理をしています。  
+`deployStoryBook` のワークフローから実行しています。
