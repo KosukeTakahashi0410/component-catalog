@@ -1,8 +1,8 @@
 # Component catalog
 
+[Component catalog](https://kosuketakahashi0410.github.io/component-catalog/)  
 component のカタログです  
-Github pages で配信されています。  
-[Component catalog](https://kosuketakahashi0410.github.io/component-catalog/)
+Github pages で配信されています。
 
 ## scripts
 
